@@ -24,9 +24,11 @@ module.exports = env => {
     )
   }
   return {
-    entry: {
-      app: './app/js/main.js'
-    },
+    entry:['./app/js/viewport.js','./app/js/main.js'],
+    // 单个入口
+    // entry: {
+    //   app: './app/js/main.js'
+    // },
     devServer: {
       contentBase: './dist',
       hot: true,
